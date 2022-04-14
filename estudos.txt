@@ -1,0 +1,33 @@
+Agora, ao inves de termos que fazer todas as instalações manualmente como foi feito no explorer 2.0, aqui nos nos 
+vamos simplismente usar uma biblioteca chamada create-react-app, é uma bibliote onde temos todas as dependencias
+que é preciso: react, typescript, webpack e babel. 
+Bem, usamos o comando : yarn create react-app nome da pasta --template typescript 
+Uma vez feito isso, vai se instalar todas as dependencias. Vamos poder fazer uma limpa nos arquivos:
+Iremos deixar na pasta dist: App.tsx, index.tsx e react-app-env.d.ts
+Na pasta publique deixaremos somente o inde.htmlparser
+La no nosso arquivo package.json, na parte de "dependencies": vamos pegar todos as @testing, @types e o typescript
+vamos criar uma parte devDependencies e colocaremos essas depenecias como desenvolvimento. 
+
+--> Trabalhando com styled-components: Sempre que vamos trabalhar com css, normalmente, criamos um arquivo .css e lá 
+fazemos nossas estilizações, só que temos uma dificuldade ae, quando temos um projeto muito grande, mas bem grande 
+ou até mesmo muito antigo, muitas das vezes fica inviavel identificar qual tag css é, ou para que cervo ou onde ela
+está. E mesmo crindo com Sass, onde podemos dividir noss aplicação em diversas partes, ainda vi chegar um momento 
+onde vamos ter muitas nomeclaturas e não vamos conseguir identificar onde e para que serve tal coisa. E é aqui que o 
+styled-components entra, com ele nos conseguimos criar algo expecifico para aquele ponto, um título por exemplo, se 
+usarmos um title na aplicão comum, pode chegar um ponto onde esse  title vai dar conflito, vi sobressair uma oltra 
+tag e vai dar dor de cabeça, com styled-components não temos esse problemas, porque ele é criado expecificamente para
+um arquivo em expecifico, pra uma tag expecifica, e ele vai gerar de forma aleatoria uma tag css, para que não aja
+conflitos: 
+import styled from 'styled-components'
+const Title = styled.h1`                        Perceba que ao invez de nomermos uma class, colocamos o nome da 
+  font-size: 50px;                              const. Isso porque é uma coisa unica, que não se repete e não da 
+  color: #8257e6;                               conflito.
+`
+export function App() {
+  return (
+    <div className="App">
+      <Title>Hello World!</Title>
+    </div>
+  );
+}
+
