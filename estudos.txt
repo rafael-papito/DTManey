@@ -41,3 +41,4 @@ procurarmos uma cor expecifica e colocar essa cor, ele faz isso por nos.
  
 ---> REM, o rem é uma "unidade de medida" como o px por exemplo. Por padrão a web usa 16px no desktop, 
 1rem = 16px, então quando usamos 2rem, estamos usando 32px, é so multiplicar a quantidade de rem por 16px.
+
