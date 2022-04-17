@@ -21,7 +21,7 @@ createServer({
 
         {
           id: 2,
-          title: 'Aluguel',
+        title: 'Aluguel',
           type: 'withdrow',
           category: 'Casa',
           amount: 1100,
