@@ -1,6 +1,7 @@
 Agora, ao invés de termos que fazer todas as instalações manualmente como foi feito no explorer 2.0, aqui nós nos 
 vamos simplesmente usar uma biblioteca chamada create-react-app, é uma biblioteca onde temos todas as dependências
-que é preciso: react, typescript, webpack e babel. 
+que é preciso: react, typescript, webpack e babel. Com isso não precisamos nos preoculpar com as dependêcias,
+nos preocupamos somente com o código em si. 
 Bem, usamos o comando : yarn create react-app nome da pasta --template typescript 
 Uma vez feito isso, vai se instalar todas as dependências. Vamos poder fazer uma limpa nos arquivos:
 Iremos deixar na pasta dist: App.tsx, index.tsx e react-app-env.d.ts
